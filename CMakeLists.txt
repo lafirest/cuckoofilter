@@ -10,8 +10,8 @@ include_directories(include src)
 add_library(cuckoofilter STATIC src/hashutil.cc)
 
 # test
-add_executable(test example/test.cc)
-target_link_libraries(test PRIVATE
+add_executable(cuckoofilter_test example/test.cc)
+target_link_libraries(cuckoofilter_test PRIVATE
     cuckoofilter
     ssl
     crypto
